@@ -15,6 +15,9 @@ DEVICE_PATH := device/oneplus/avalon
 # Assert
 TARGET_OTA_ASSERT_DEVICE := OP5E93L1
 
+# Camera
+TARGET_CAMERA_SERVICE_EXT_LIB := //$(DEVICE_PATH):libcameraservice_extension.avalon
+
 # Display
 TARGET_SCREEN_DENSITY := 530
 
