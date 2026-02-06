@@ -22,7 +22,7 @@ TARGET_CAMERA_SERVICE_EXT_LIB := //$(DEVICE_PATH):libcameraservice_extension.ava
 TARGET_SCREEN_DENSITY := 530
 
 # Kernel
-TARGET_KERNEL_ADDITIONAL_FLAGS += CONFIG_AVALON_DTB=y
+TARGET_KERNEL_CONFIG += vendor/oplus/avalon.config
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop

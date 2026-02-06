@@ -10,14 +10,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from avalon device
 $(call inherit-product, device/oneplus/avalon/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-DERPFEST_BUILD_TYPE := Official
-TARGET_USES_BLUR := true
+TARGET_ENABLE_BLUR := true
 TARGET_DISABLE_EPPE := true
+TARGET_BUILD_GAPPS := true
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common YAAP stuff.
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_avalon
+PRODUCT_NAME := yaap_avalon
 PRODUCT_DEVICE := avalon
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
