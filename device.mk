@@ -44,6 +44,9 @@ $(call inherit-product-if-exists, vendor/oneplus/ir/ir.mk)
 # LiveDisplay
 $(call soong_config_set_bool,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_SE,false)
 
+# OPlus Camera
+$(call inherit-product-if-exists, vendor/oplus/camera/avalon/opluscamera.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
