@@ -54,9 +54,19 @@ blob_fixups: blob_fixups_user_type = {
     'odm/lib64/libAlgoProcess.so': blob_fixup()
         .replace_needed('android.hardware.graphics.common-V3-ndk.so', 'android.hardware.graphics.common-V7-ndk.so')
         .replace_needed('android.hardware.graphics.common-V4-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
-    ('odm/lib64/libCOppLceTonemapAPI.so', 'odm/lib64/libSuperRaw.so', 'odm/lib64/libYTCommon.so', 'odm/lib64/libyuv2.so'): blob_fixup()
+    (
+        'odm/lib64/libCOppLceTonemapAPI.so',
+        'odm/lib64/libSuperRaw.so',
+        'odm/lib64/libYTCommon.so',
+        'odm/lib64/libyuv2.so',
+    ): blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
-    ('odm/lib64/libHIS.so', 'odm/lib64/libOGLManager.so', 'odm/lib64/libOPAlgoCamAiBeautyFaceRetouchCn.so', 'odm/lib64/libOPAlgoCamFaceBeautyCap.so'): blob_fixup()
+    (
+        'odm/lib64/libHIS.so',
+        'odm/lib64/libOGLManager.so',
+        'odm/lib64/libOPAlgoCamAiBeautyFaceRetouchCn.so',
+        'odm/lib64/libOPAlgoCamFaceBeautyCap.so',
+    ): blob_fixup()
         .clear_symbol_version('AHardwareBuffer_acquire')
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_describe')
@@ -68,8 +78,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_handle_close')
         .clear_symbol_version('remote_handle_invoke')
         .clear_symbol_version('remote_handle_open')
-        .clear_symbol_version('remote_register_buf_attr')
-        .clear_symbol_version('remote_register_buf'),
+        .clear_symbol_version('remote_register_buf')
+        .clear_symbol_version('remote_register_buf_attr'),
     (
         'odm/lib64/libdisplaycolorfeature.so',
         'odm/lib64/libdisplayfossfeature_nature.so',
