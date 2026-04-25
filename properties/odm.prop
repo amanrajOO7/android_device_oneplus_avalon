@@ -1,6 +1,7 @@
 # Regional properties
-ro.product.property_source_order=odm,vendor,product,system_ext,system
 import /odm/etc/${ro.boot.prjname}/build.default.prop
+
+ro.product.property_source_order=odm,vendor,product,system_ext,system
 
 # Sensors
 ro.vendor.oplus.sensor.brl_receive=true
