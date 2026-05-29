@@ -62,11 +62,8 @@ PRODUCT_SOONG_NAMESPACES += \
 $(call soong_config_set_bool,OPLUS_LINEAGE_TOUCH_HAL,ENABLE_GM,true)
 
 # Vibrator
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator.service.oplus-richtap
-
-$(call soong_config_set_bool,OPLUS_LINEAGE_VIBRATOR_HAL,USE_RICHTAP_EFFECT_REMAP,true)
-$(call soong_config_set_bool,OPLUS_LINEAGE_VIBRATOR_HAL,USES_OPLUS_AWINIC,true)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/vendor.qti.hardware.vibrator.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.vibrator.service.rc
 
 # WiFi firmware symlinks
 PRODUCT_PACKAGES += \

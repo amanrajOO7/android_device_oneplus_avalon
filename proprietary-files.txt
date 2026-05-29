@@ -1826,9 +1826,36 @@ odm/firmware/ufs/SKhynix-HN8T274EJKX130.bin
 odm/firmware/ufs/move_target_ufs_fw_to_oplusreserve1.sh
 odm/firmware/ufs/ufs_version_config.xml
 
-# Vibrator
-odm/etc/aac_richtap.config
-odm/lib64/libaacvibrator.so:vendor/lib64/libaacvibrator.so
+# Vibrator (from Pong_B4.1-260414-1749)
+odm/etc/aac_richtap.config|437e41f9cfcaf3185ef6b23e328a53d780b786a5
+vendor/bin/hw/vendor.qti.hardware.vibrator.service|8a16b9d286232d21f4355861d98b16faad252bd9|9de02de8811a64bf8ff86f8f2ae59e1716456643
+vendor/etc/richtapresources/default/click.he|7e830c51691df3e295be6de11d78ad4ae0f715e1
+vendor/etc/richtapresources/default/double_click.he|bc2049ec951c50db48afe37b552f69a648464d1d
+vendor/etc/richtapresources/default/heavy_click.he|7e830c51691df3e295be6de11d78ad4ae0f715e1
+vendor/etc/richtapresources/default/pop.he|7e830c51691df3e295be6de11d78ad4ae0f715e1
+vendor/etc/richtapresources/default/texture_tick.he|71a3b6030eee12f9c3ba2e2c0f05330b0aa5c617
+vendor/etc/richtapresources/default/thud.he|7e830c51691df3e295be6de11d78ad4ae0f715e1
+vendor/etc/richtapresources/default/tick.he|7e830c51691df3e295be6de11d78ad4ae0f715e1
+vendor/etc/richtapresources/strong/click.he|ae28131b8dee5015c92c44eee71f0143ec792d41
+vendor/etc/richtapresources/strong/double_click.he|eac4ca50d483ce4386bbec56ebb10af4e58990e8
+vendor/etc/richtapresources/strong/heavy_click.he|ae28131b8dee5015c92c44eee71f0143ec792d41
+vendor/etc/richtapresources/strong/pop.he|ae28131b8dee5015c92c44eee71f0143ec792d41
+vendor/etc/richtapresources/strong/texture_tick.he|7e830c51691df3e295be6de11d78ad4ae0f715e1
+vendor/etc/richtapresources/strong/thud.he|ae28131b8dee5015c92c44eee71f0143ec792d41
+vendor/etc/richtapresources/strong/tick.he|ae28131b8dee5015c92c44eee71f0143ec792d41
+vendor/etc/richtapresources/weak/click.he|44c94b106eb8c2cd32dd49227a1293538d1297ee
+vendor/etc/richtapresources/weak/double_click.he|4d92ad61d504c8c38cf39103523d4b9f7d8d3d80
+vendor/etc/richtapresources/weak/heavy_click.he|44c94b106eb8c2cd32dd49227a1293538d1297ee
+vendor/etc/richtapresources/weak/pop.he|44c94b106eb8c2cd32dd49227a1293538d1297ee
+vendor/etc/richtapresources/weak/texture_tick.he|44c94b106eb8c2cd32dd49227a1293538d1297ee
+vendor/etc/richtapresources/weak/thud.he|44c94b106eb8c2cd32dd49227a1293538d1297ee
+vendor/etc/richtapresources/weak/tick.he|44c94b106eb8c2cd32dd49227a1293538d1297ee
+vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml|1b2536fb77244fbd1b87826229ca1ee72286aa47
+vendor/lib64/hw/vibrator.default.so|24f801fc173b989abfa7990e0e6c058a86e2e13a
+vendor/lib64/libaacvibrator.so|03f0cc29e8ef4b7caa96348637f40c6fd4963914
+vendor/lib64/libqtivibratoreffect.so|90429f42955bc409be5b5a8aa4af2553bf3a96c6
+vendor/lib64/vendor.aac.hardware.richtap.vibrator-V1-ndk_platform.so|babaf76d391f16a7c39e98682b10589aad0ded74
+vendor/lib64/vendor.qti.hardware.vibrator.impl.so|7c6dc66e28c01020b394e6ca0bf13e1b49067949|4babf1e42bc4bf8556d21ce9e939c53ab2dbf457
 
 # Vibrator firmware
 odm/firmware/aw8697_haptic.bin
