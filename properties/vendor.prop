@@ -4,5 +4,9 @@ bluetooth.device.default_name=OnePlus Nord 4
 # Graphics
 debug.sf.auto_latch_unsignaled=1
 
+# OPlus Camera
+ro.vendor.oplus.market.enname=OnePlus Nord 4
+ro.vendor.oplus.market.name=OnePlus Nord 4
+
 # USB
 vendor.usb.product_string=OnePlus Nord 4
