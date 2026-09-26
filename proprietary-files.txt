@@ -891,7 +891,7 @@ odm/etc/camera/gm_tcs3449_golden
 odm/etc/camera/libiceainr_model.dlc
 odm/etc/camera/main_inv_mapxy_33x25.bin
 odm/etc/camera/main_mapxy_33x25.bin
-odm/etc/camera/media_profiles.xml
+odm/etc/camera/media_profiles.xml:vendor/etc/media_profiles_cliffs_v1.xml;TRYSRCFIRST
 odm/etc/camera/model_fdc.data
 odm/etc/camera/mvg_sat_config.json
 odm/etc/camera/neon_yuv_LUT_64.bin
