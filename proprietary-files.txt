@@ -1790,6 +1790,7 @@ vendor/lib64/libdtlm.so
 vendor/lib64/sensors.qsh.so
 
 # Sensors config
+my_product/etc/fusionlight_profile/fusionlight_Main_2_6.json:odm/etc/fusionlight_profile/fusionlight_Main_2_6.json
 odm/etc/sensor/config/avalon_qrd_ois_system.json
 odm/etc/sensor/config/json_list
 odm/etc/sensor/config/lux_aod.json
