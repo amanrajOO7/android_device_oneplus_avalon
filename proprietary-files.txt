@@ -110,6 +110,20 @@ odm/etc/lvacfs_params/2mic/audiozoom_7.txt
 odm/etc/lvacfs_params/2mic/audiozoom_8.txt
 odm/etc/lvacfs_params/2mic/audiozoom_9.txt
 
+# Audio spatializer
+odm/etc/oplusmetaaudio/HP_MOVIE_ANALOG.bin:odm/etc/spatializer/HP_MOVIE_ANALOG.bin
+odm/etc/oplusmetaaudio/HP_MOVIE_BLUETOOTH.bin:odm/etc/spatializer/HP_MOVIE_BLUETOOTH.bin
+odm/etc/oplusmetaaudio/HP_MOVIE_DIGITAL.bin:odm/etc/spatializer/HP_MOVIE_DIGITAL.bin
+odm/etc/oplusmetaaudio/HP_MOVIE_GALILEO.bin:odm/etc/spatializer/HP_MOVIE_GALILEO.bin
+odm/etc/oplusmetaaudio/HP_MUSIC_ANALOG.bin:odm/etc/spatializer/HP_MUSIC_ANALOG.bin
+odm/etc/oplusmetaaudio/HP_MUSIC_BLUETOOTH.bin:odm/etc/spatializer/HP_MUSIC_BLUETOOTH.bin
+odm/etc/oplusmetaaudio/HP_MUSIC_DIGITAL.bin:odm/etc/spatializer/HP_MUSIC_DIGITAL.bin
+odm/etc/oplusmetaaudio/HP_MUSIC_GALILEO.bin:odm/etc/spatializer/HP_MUSIC_GALILEO.bin
+odm/etc/oplusmetaaudio/SPAT_AUDIOX_ROOMMODEL_MOVIE.bin:odm/etc/spatializer/SPAT_AUDIOX_ROOMMODEL_MOVIE.bin
+odm/etc/oplusmetaaudio/SPAT_AUDIOX_ROOMMODEL_MUSIC.bin:odm/etc/spatializer/SPAT_AUDIOX_ROOMMODEL_MUSIC.bin
+odm/lib64/soundfx/liboplus_spatializer.so
+odm/lib64/liboplus_spat_audiox.so
+
 # Camera
 odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service
 odm/etc/camera/aigc/aigc_models/blurDet_sm7675.bin
