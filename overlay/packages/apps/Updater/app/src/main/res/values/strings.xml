@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="updater_server_url" translatable="false">https://raw.githubusercontent.com/amanrajOO7/derpfest_avalon/16.0/avalon.json</string>
-    <string name="menu_changelog_url" translatable="false">https://raw.githubusercontent.com/amanrajOO7/derpfest_avalon/16.0/changelog_avalon.txt</string>
-    <string name="changelog_url" translatable="false">https://raw.githubusercontent.com/amanrajOO7/derpfest_avalon/16.0/changelog_avalon.txt</string>
+    <string name="updater_server_url" translatable="false">https://raw.githubusercontent.com/amanrajOO7/derpfest_avalon/17.0/avalon.json</string>
+    <string name="menu_changelog_url" translatable="false">https://raw.githubusercontent.com/amanrajOO7/derpfest_avalon/17.0/changelog_avalon.txt</string>
+    <string name="changelog_url" translatable="false">https://raw.githubusercontent.com/amanrajOO7/derpfest_avalon/17.0/changelog_avalon.txt</string>
 </resources>
