@@ -921,6 +921,7 @@ odm/etc/camera/stereoParams.bin
 odm/etc/camera/text_enhance_yuv_v1.tflite
 odm/etc/camera/wide_inv_padding_mapxy_33x25.bin
 odm/etc/camera/wide_padding_mapxy_33x25.bin
+odm/etc/init/init.camera_process.rc
 odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc
 odm/etc/vintf/manifest/manifest_oplus_camera_rfi.xml
 odm/etc/vintf/manifest/manifest_oplus_cammidasservice_aidl.xml
@@ -1005,6 +1006,7 @@ odm/lib64/libSnpeCpu.so;FIX_SONAME
 odm/lib64/libSnpeGpu.so;FIX_SONAME
 odm/lib64/libSnpeHtpPrepare.so
 odm/lib64/libSnpeHtpV73Stub.so
+odm/lib64/libssd_det.so
 odm/lib64/libSuperRaw.so
 odm/lib64/libSuperTextWrapper.so
 odm/lib64/libUpScale.so
