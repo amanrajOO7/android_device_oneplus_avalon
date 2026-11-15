@@ -24,6 +24,11 @@ TARGET_SCREEN_WIDTH := 1240
 # BCR
 $(call inherit-product-if-exists, vendor/bcr/bcr.mk)
 
+# Camera (SR model .bin names, see Android.bp)
+PRODUCT_PACKAGES += \
+    sr_models.bin_symlink \
+    sr_ref_models.bin_symlink
+
 # Display
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947214369728643.xml

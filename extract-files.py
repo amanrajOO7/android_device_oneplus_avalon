@@ -61,6 +61,11 @@ blob_fixups: blob_fixups_user_type = {
         'odm/lib64/libyuv2.so',
     ): blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
+    (
+        'odm/lib64/sr_models.so',
+        'odm/lib64/sr_ref_models.so',
+    ): blob_fixup()
+        .fix_soname(),
     'odm/lib64/libHIS.so': blob_fixup()
         .clear_symbol_version('AHardwareBuffer_acquire')
         .clear_symbol_version('AHardwareBuffer_allocate')
@@ -146,3 +151,4 @@ if __name__ == '__main__':
         module, 'sm8650-common', module.vendor
     )
     utils.run()
+
