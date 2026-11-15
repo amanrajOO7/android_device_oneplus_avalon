@@ -61,8 +61,16 @@ blob_fixups: blob_fixups_user_type = {
         'odm/lib64/libyuv2.so',
     ): blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
+    'odm/lib64/libHIS.so': blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_acquire')
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_lock')
+        .clear_symbol_version('AHardwareBuffer_lockPlanes')
+        .clear_symbol_version('AHardwareBuffer_release')
+        .clear_symbol_version('AHardwareBuffer_unlock')
+        .replace_needed('libui.so', 'libui-stock.so'),
     (
-        'odm/lib64/libHIS.so',
         'odm/lib64/libOGLManager.so',
         'odm/lib64/libOPAlgoCamAiBeautyFaceRetouchCn.so',
         'odm/lib64/libOPAlgoCamFaceBeautyCap.so',
@@ -109,6 +117,7 @@ blob_fixups: blob_fixups_user_type = {
         'odm/lib64/camera/components/com.oplus.node.mvgsat.so',
         'odm/lib64/camera/components/com.oplus.node.sstabphoto.so',
         'odm/lib64/hw/camera.oemlayer.so',
+        'odm/lib64/libEIS.so',
         'odm/lib64/libmvgcommon.so',
         'odm/lib64/libsharebuffer_impl.so',
         'vendor/lib64/camera/components/com.qti.node.dewarp.so',
